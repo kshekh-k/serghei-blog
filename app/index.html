@@ -24,13 +24,24 @@
   <body>
     <div class="overflow-hidden">
       <div class="flex flex-col min-h-screen">
-        <header class="flex items-center justify-between px-10">
-          <div class="w-48 ">
+        <header class="flex items-stretch justify-between px-5 xl:px-10 h-20">
+          <div class="flex items-center gap-3">
+          <button class='text-black/50 p-2 pl-0 rounded lg:hidden menu-open' >
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M4 6l16 0"></path>
+              <path d="M4 12l16 0"></path>
+              <path d="M4 18l16 0"></path>
+            </svg>
+      
+          </button>
+          <div class="w-32 sm:w-48 flex justify-start items-center">
             <a href="#"><img class="w-full object-cover"
                 src="/app/images/logo.png" alt="Serghiei" /></a>
           </div>
+          </div>
 
-          <nav class="flex items-stretch gap-8 font-sans text-black h-20">
+          <nav class="hidden lg:flex items-stretch gap-8 text-black ">
             <a
               class="text-xl text-black py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-100"
               href="#">Home</a>
@@ -49,6 +60,7 @@
 
           </nav>
           <div class="flex items-center gap-3">
+                        <button class='text-black/50 p-2 rounded lg:hidden ' >
             <svg viewBox="0 0 20 20" fill="currentColor"
               class="size-5 text-black/60">
               <path transform="matrix(1 0 0 1 1.6665 1.6667)"
@@ -61,10 +73,36 @@
                 d="M-0.53033 0.53033C-0.823221 0.237439 -0.823221 -0.237439 -0.53033 -0.53033C-0.237439 -0.823221 0.237439 -0.823221 0.53033 -0.53033L4.06587 3.00521C4.35876 3.2981 4.35876 3.77298 4.06587 4.06587C3.77298 4.35876 3.2981 4.35876 3.00521 4.06587L-0.53033 0.53033Z"
                 fill-rule="evenodd" />
             </svg>
+            </button>
             <a href="#"
-              class="border border-black/40 rounded-md text-lg px-4 py-2 leading-none inline-flex font-medium text-black/60 hover:bg-primary hover:border-primary hover:text-white ease-in-out duration-200">Serghei.pl
+              class="border border-black/40 rounded-md sm:text-lg sm:px-4 p-2 leading-none hidden sm:inline-flex font-medium text-black/60 hover:bg-primary hover:border-primary hover:text-white ease-in-out duration-200">Serghei.pl
             </a>
           </div>
+
+<div class="fixed flex flex-col inset-0 z-50 ease-in-out duration-300 -translate-x-full mobile-menu">
+  <div class='bg-black/60 fixed inset-0 menu-overloy'></div>
+  <div class='max-w-full w-72 bg-white flex-1 relative mr-auto flex flex-col max-h-screen pt-14'>
+    <button class='absolute top-3 right-3 text-black/50 p-2 rounded menu-close'>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+        <path d="M18 6l-12 12"></path>
+        <path d="M6 6l12 12"></path>
+      </svg>
+
+    </button>
+    <div class="flex justify-center flex-1 overflow-auto max-h-screen">
+      <nav class="flex flex-col flex-1 divide-y divide-black/10 px-5 ">
+        <a href="#" class="py-3 text-xl text-primary hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Home</a>
+        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Archive</a>
+        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Log</a>
+        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">About</a>
+        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">RSS</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
         </header>
         <main class="flex-1">
           <section class="relative overflow-hidden bg-black/5">
@@ -74,15 +112,15 @@
                 class="h-full min-w-full max-w-none object-cover" />
             </div>
             <div
-              class="min-h-[450px] flex justify-center items-center relative">
+              class="min-h-[350px] lg:min-h-[450px] flex justify-center items-center relative py-14">
               <div
-                class="flex flex-col items-center justify-center gap-8 max-w-5xl mx-auto w-full">
+                class="flex flex-col items-center justify-center px-5 gap-5 lg:gap-8 max-w-5xl mx-auto w-full">
                 <h1
-                  class="text-6xl text-black/90 font-bold font-playfair">Welcome
+                  class="text-4xl lg:text-6xl text-center text-black/90 font-bold font-playfair">Welcome
                   to Serghei's Blog</h1>
                 <div
                   class="flex flex-col items-center justify-center leading-4">
-                  <p class="text-2xl font-sans text-black/70 text-center">Tech
+                  <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 text-center">Tech
                     enthusiast, engineer, and nerd. Specializing in creating
                     smart
                     products and automating processes. I enjoy gadgets, hiking,
@@ -90,7 +128,7 @@
                     and Org mode.</p>
                 </div>
                 <a href="#"
-                  class="bg-primary hover:bg-primary/80 px-10 py-4 leading-none inline-flex text-white text-2xl font-medium font-sans rounded-md ease-in-out duration-200">Learn
+                  class="bg-primary hover:bg-primary/80 px-10 py-3 lg:py-4 leading-none inline-flex text-white text-xl lg:text-2xl font-medium font-sans rounded-md ease-in-out duration-200">Learn
                   more</a>
               </div>
             </div>
@@ -98,22 +136,20 @@
 
           <section
             class="flex justify-center items-center max-w-screen-xl px-5 mx-auto ">
-            <div class="flex justify-center flex-col gap-16 py-28">
-              <h2
-                class="text-5xl font-playfair font-bold text-black/90 -tracking-2">Recent
+            <div class="flex justify-center flex-col gap-5 lg:gap-10 xl:gap-16 py-16 lg:py-20 xl:py-28">
+              <h2 class="text-3xl lg:text-5xl font-playfair font-bold text-black/90 -tracking-2">Recent
                 Posts</h2>
               <div class="divide-y divide-black/10">
                 <div
-                  class="flex justify-between items-start gap-10 py-16 first-of-type:pt-0">
+                  class="flex justify-between items-start flex-col-reverse md:flex-row gap-10 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
                   <div
                     class="flex flex-col justify-center gap-3 max-w-4xl xl:pr-10">
-                    <h3
-                      class="text-4xl font-bold text-black/90 leading-normal">Advanced
+                    <h3 class="text-2xl lg:text-4xl font-bold text-black/90 leading-normal lg:leading-normal">Advanced
                       Python Development Workflow in Emacs</h3>
-                    <p class="text-2xl text-black/70">Emacs is not just
+                    <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">Emacs is not just
                       an editor — it’s an extensible platform for
                       crafting highly personalized development environments.</p>
-                    <div class="flex gap-6 pt-4">
+                    <div class="flex flex-wrap gap-y-4 gap-x-6 pt-4">
                       <div class="flex items-center gap-2">
                         <svg fill="currentColor" class="size-5 text-black/50"
                           viewBox="0 0 20 20">
@@ -170,24 +206,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="size-64 bg-black/5">
+                  <div class="mx-auto w-full sm:size-64 bg-black/5 shrink-0">
                     <img class="w-full aspect-square"
                       src="./images/blog-post-thumb-1.png" alt>
                   </div>
                 </div>
 
                 <div
-                  class="flex justify-between items-start gap-10 py-16 first-of-type:pt-0">
+                  class="flex justify-between items-start flex-col-reverse md:flex-row gap-10 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
                   <div
                     class="flex flex-col justify-center gap-3 max-w-4xl xl:pr-10">
-                    <h3
-                      class="text-4xl font-bold text-black/90 leading-normal ">Scheduling
+                    <h3 class="text-2xl lg:text-4xl font-bold text-black/90 leading-normal lg:leading-normal">Scheduling
                       Recurring Tasks on macOS Using Launchd</h3>
-                    <p class="text-2xl text-black/70">Emacs is not just
+                      <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">Emacs is not just
                       In my setup, some workstations run macOS. Recently, I
                       encountered a task I hadn’t faced before on macOS —
                       scheduling recurring tasks.</p>
-                    <div class="flex gap-6 pt-4">
+                      <div class="flex flex-wrap gap-y-4 gap-x-6 pt-4">
                       <div class="flex items-center gap-2">
                         <svg fill="currentColor" class="size-5 text-black/50"
                           viewBox="0 0 20 20">
@@ -238,25 +273,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="size-64 bg-black/5">
+                  <div class="mx-auto w-full sm:size-64 bg-black/5 shrink-0">
                     <img class="w-full aspect-square"
                       src="./images/blog-post-thumb-2.png" alt>
                   </div>
                 </div>
 
                 <div
-                  class="flex justify-between items-start gap-10 py-16 first-of-type:pt-0">
+                  class="flex justify-between items-start flex-col-reverse md:flex-row gap-10 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
                   <div
                     class="flex flex-col justify-center gap-3 max-w-4xl xl:pr-10">
-                    <h3
-                      class="text-4xl font-bold text-black/90 leading-normal">Fast-Tracking
+                    <h3 class="text-2xl lg:text-4xl font-bold text-black/90 leading-normal lg:leading-normal">Fast-Tracking
                       Email Deliverability: My Experience with AI-Powered
                       Warm-Up</h3>
-                    <p class="text-2xl text-black/70">This story started when I
+                      <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">This story started when I
                       connected a fresh domain to Fastmail. I wasn’t expecting
                       any
                       issues at first — after all, it was just email, right?</p>
-                    <div class="flex gap-6 pt-4">
+                      <div class="flex flex-wrap gap-y-4 gap-x-6 pt-4">
                       <div class="flex items-center gap-2">
                         <svg fill="currentColor" class="size-5 text-black/50"
                           viewBox="0 0 20 20">
@@ -307,25 +341,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="size-64 bg-black/5">
+                  <div class="mx-auto w-full sm:size-64 bg-black/5 shrink-0">
                     <img class="w-full aspect-square"
                       src="./images/blog-post-thumb-3.png" alt>
                   </div>
                 </div>
 
                 <div
-                  class="flex justify-between items-start gap-10 py-16 first-of-type:pt-0">
+                  class="flex justify-between items-start flex-col-reverse md:flex-row gap-10 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
                   <div
                     class="flex flex-col justify-center gap-3 max-w-4xl xl:pr-10">
-                    <h3
-                      class="text-4xl font-bold text-black/90 leading-normal">A
+                    <h3 class="text-2xl lg:text-4xl font-bold text-black/90 leading-normal lg:leading-normal">A
                       Quick Dive into FFI in Python</h3>
-                    <p class="text-2xl text-black/70 line-clamp-2">FFI (Foreign
+                      <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">FFI (Foreign
                       Function Interface) is a classic abstraction that allows
                       you
                       to invoke functions written in other programming languages
                       from</p>
-                    <div class="flex gap-6 pt-4">
+                      <div class="flex flex-wrap gap-y-4 gap-x-6 pt-4">
                       <div class="flex items-center gap-2">
                         <svg fill="currentColor" class="size-5 text-black/50"
                           viewBox="0 0 20 20">
@@ -376,15 +409,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="size-64 bg-black/5">
+                  <div class="mx-auto w-full sm:size-64 bg-black/5 shrink-0">
                     <img class="w-full aspect-square"
                       src="./images/blog-post-thumb-4.png" alt>
                   </div>
                 </div>
 
-                <div class="flex items-center justify-center pt-16">
+                <div class="flex items-center justify-center pt-5 lg:pt-16">
                   <button
-                    class="bg-black/10 hover:bg-primary hover:text-white px-16 py-4 leading-none rounded-md text-black/90 text-2xl font-medium ease-in-out duration-200">View
+                    class="bg-black/10 hover:bg-primary hover:text-white px-12 lg:px-16 py-3 lg:py-4 leading-none rounded-md text-black/90 text-xl lg:text-2xl font-medium ease-in-out duration-200">View
                     all</button>
                 </div>
               </div>
@@ -392,16 +425,15 @@
           </section>
 
           <section class="max-w-screen-xl px-5 mx-auto">
-            <div class="flex justify-center flex-col gap-16 pb-28">
-              <h2
-                class="text-5xl font-playfair font-bold text-black/90 -tracking-2">My
+            <div class="flex justify-center flex-col gap-5 lg:gap-10 xl:gap-16 pb-16 lg:pb-20 xl:pb-28">
+              <h2 class="text-3xl lg:text-5xl font-playfair font-bold text-black/90 -tracking-2">My
                 Projects</h2>
-              <div class="grid grid-cols-3 gap-x-20 gap-y-14">
+              <div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 xl:gap-x-20 xl:gap-y-14">
                 <div
                   class="bg-black/5 border border-black/5 py-10 px-8 space-y-3 hover:bg-white hover:shadow-1 hover:border-black/10 ease-in-out duration-200 relative">
                   <h4 class="font-bold text-2xl text-black/90 leading-none">BNF
                     Mode</h4>
-                  <p class="text-xl text-black/70">A GNU Emacs major
+                    <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">A GNU Emacs major
                     mode for editing BNF grammars.</p>
                   <a href="javascript:void(0)"
                     class="absolute inset-0 opacity-0"><span
@@ -412,7 +444,7 @@
                   class="bg-black/5 border border-black/5 py-10 px-8 space-y-3 hover:bg-white hover:shadow-1 hover:border-black/10 ease-in-out duration-200 relative">
                   <h4 class="font-bold text-2xl text-black/90 leading-none">Ed
                     Theme</h4>
-                  <p class="text-xl text-black/70 line-clamp-2">A Hugo theme
+                    <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">A Hugo theme
                     designed for textual editors based on</p>
                   <a href="javascript:void(0)"
                     class="absolute inset-0 opacity-0"><span
@@ -423,7 +455,7 @@
                   class="bg-black/5 border border-black/5 py-10 px-8 space-y-3 hover:bg-white hover:shadow-1 hover:border-black/10 ease-in-out duration-200 relative">
                   <h4
                     class="font-bold text-2xl text-black/90 leading-none">Gstore</h4>
-                  <p class="text-xl text-black/70 line-clamp-2">A dead simple
+                    <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 line-clamp-2">A dead simple
                     tool to synchronize GitHub repositories</p>
                   <a href="javascript:void(0)"
                     class="absolute inset-0 opacity-0"><span
@@ -445,7 +477,7 @@
           </section>
         </main>
         <footer
-          class="border-t border-black/10 flex items-center justify-between px-10 gap-5 h-20">
+          class="border-t border-black/10 flex flex-col-reverse md:flex-row items-center justify-between px-5 xl:px-10 gap-3 md:gap-5 h-20">
           <p class="font-inter text-sm text-black/70">CC BY 4.0 Licensed &copy; <span
               class="current-year"></span> Serghei Iakovlev</p>
           <nav class="flex items-stretch gap-8 font-inter text-black h-20">
@@ -471,7 +503,28 @@
     </div>
     <script>
       const currentYear = new Date().getFullYear()
-document.querySelector('.current-year').innerHTML = currentYear
+document.querySelector('.current-year').innerHTML = currentYear;
+
+// Menu
+const menuOpen = document.querySelector('.menu-open');
+const menuClose = document.querySelector('.menu-close');
+const menuOverloy = document.querySelector('.menu-overloy');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+menuOpen.addEventListener("click", () =>{
+  mobileMenu.classList.add('translate-x-0')
+  mobileMenu.classList.remove('-translate-x-full')
+})
+
+menuOverloy.addEventListener("click", () =>{
+  mobileMenu.classList.remove('translate-x-0')
+  mobileMenu.classList.add('-translate-x-full')
+})
+menuClose.addEventListener("click", () =>{
+  mobileMenu.classList.remove('translate-x-0')
+  mobileMenu.classList.add('-translate-x-full')
+})
+
     </script>
   </body>
 
