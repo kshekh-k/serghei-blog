@@ -10,75 +10,270 @@
 </head>
 
 <body>
-    <div class="overflow-hidde px-10 mx-auto w-3/4">
-        <div class="flex items-center justify-center gap-10">
-            <div class="">
-                <img class="w-96" src="/app/images/Mask group (1).png" alt="">
-            </div>
-            <div class="flex flex-col justify-center gap-5 ">
-                <h1 class="font-playfair text-6xl font-bold -tracking-3 text-black/90">My Story and Journey</h1>
-                <p class="font-sans text-black/70 text-2xl">Hi! I am Serghei Iakovlev, a software engineer and tech
-                    enthusiast from Wrocław, Poland.</p>
-                <div class="bg-linkedin flex items-center justify-center gap-2 w-36 rounded-md py-3 px-2 ">
-                    <svg class="size-6 text-white" viewBox="0 0 24 24">
-                        <path transform="matrix(1 0 0 1 2 2)"
-                            d="M15 0C16.3807 0 17.5592 0.488155 18.5355 1.46447C19.5118 2.44078 20 3.61929 20 5L20 15C20 16.3807 19.5118 17.5592 18.5355 18.5355C17.5592 19.5118 16.3807 20 15 20L5 20C3.61929 20 2.44078 19.5118 1.46447 18.5355C0.488155 17.5592 -7.94729e-08 16.3807 0 15L0 5C0 3.61929 0.488155 2.44078 1.46447 1.46447C2.44078 0.488155 3.61929 0 5 0L15 0ZM6 8C5.72386 8 5.48816 8.09763 5.29289 8.29289C5.09763 8.48816 5 8.72386 5 9L5 14C5 14.2761 5.09763 14.5118 5.29289 14.7071C5.48815 14.9024 5.72386 15 6 15C6.27614 15 6.51184 14.9024 6.70711 14.7071C6.90237 14.5118 7 14.2761 7 14L7 9C7 8.72386 6.90237 8.48815 6.70711 8.29289C6.51184 8.09763 6.27614 8 6 8ZM12 8C11.7994 7.99989 11.6008 8.0197 11.4042 8.05943C11.2075 8.09916 11.0168 8.15801 10.832 8.236L10.707 8.293C10.564 8.15005 10.3933 8.05885 10.195 8.01942C9.99672 7.97998 9.80415 7.99895 9.61735 8.07632C9.43054 8.15369 9.28095 8.27643 9.1686 8.44454C9.05624 8.61265 9.00004 8.7978 9 9L9 14C9 14.2761 9.09763 14.5118 9.29289 14.7071C9.48815 14.9024 9.72386 15 10 15C10.2761 15 10.5118 14.9024 10.7071 14.7071C10.9024 14.5118 11 14.2761 11 14L11 11C11 10.7239 11.0976 10.4882 11.2929 10.2929C11.4882 10.0976 11.7239 10 12 10C12.2761 10 12.5118 10.0976 12.7071 10.2929C12.9024 10.4882 13 10.7239 13 11L13 14C13 14.2761 13.0976 14.5118 13.2929 14.7071C13.4882 14.9024 13.7239 15 14 15C14.2761 15 14.5118 14.9024 14.7071 14.7071C14.9024 14.5118 15 14.2761 15 14L15 11C15 10.1716 14.7071 9.46447 14.1213 8.87868C13.5355 8.29289 12.8284 8 12 8ZM6 5C5.74651 5.00003 5.52505 5.08427 5.33563 5.25271C5.1462 5.42116 5.03666 5.63125 5.007 5.883L5 6.01C5.00029 6.27455 5.09124 6.503 5.27285 6.69537C5.45445 6.88773 5.6773 6.99167 5.9414 7.00717C6.20549 7.02268 6.43897 6.94553 6.64183 6.77574C6.8447 6.60594 6.96176 6.3897 6.993 6.127L7 6C7 5.72386 6.90237 5.48815 6.70711 5.29289C6.51184 5.09763 6.27614 5 6 5Z"
-                            fill-rule="nonzero" fill="rgb(255, 255, 255)" />
-                    </svg>
+    <div class="overflow-hidden">
+        <div class="flex flex-col min-h-screen">
+            <header class="flex items-stretch justify-between px-5 xl:px-10 h-20 border-b border-black/10">
+                <div class="flex items-center justify-between sm:justify-start gap-3 flex-1 sm:flex-none">
+                    <button class='text-black/50 p-2 pl-0 rounded lg:hidden menu-open'>
 
-                    <button class="font-medium font-sans text-white text-2xl border-none outline-none">Linkedin</button>
-                </div>
-            </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M4 6l16 0"></path>
+                            <path d="M4 12l16 0"></path>
+                            <path d="M4 18l16 0"></path>
+                        </svg>
 
-        </div>
+                    </button>
+                    <div class="w-48 mx-auto flex justify-start items-center">
+                        <a href="#"><img class="w-full object-cover" src="/app/images/logo.png" alt="Serghiei" /></a>
+                    </div>
+                </div>
 
-        <div class="flex gap-16 ml-10 mt-12 py-8">
-            <h2 class="text-black/90 font-bold font-playfair  text-4xl -tracking-2">My Current Work</h2>
-            <div class="flex flex-col gap-6 w-1/2">
-                <p class="font-sans text-2xl text-black/70">At present, I am employed at airSlate, where I develop a
-                    comprehensive online platform for automating business processes. This platform enables users to
-                    create, fill out, and sign documents in real time. </p>
-                <p class="font-sans text-2xl text-black/70">airSlate provides tools for building and customizing
-                    business workflows without writing any code, allowing for accelerated processes and increased
-                    productivity. </p>
-                <p class="font-sans text-2xl text-black/70">It facilitates the automation of various business
-                    operations, such as contract management, loan application processing, document approvals, and much
-                    more.</p>
-            </div>
-        </div>
-        <hr>
-        <div class="flex gap-16 ml-36 mt-10 py-8">
-         <h2 class="text-black/90 font-bold font-playfair  text-4xl -tracking-2">Experience</h2>
-         <div class="flex flex-col gap-6 w-1/2">
-            <h3 class="font-medium text-3xl font-sans text-black/90">With the Phalcon</h3>
-            <p class="font-sans text-2xl text-black/70">In the past, I was the primary maintainer of the Zephir language and was part of the Phalcon team. Together, we developed a full-featured PHP framework delivered as a C extension. Currently, I have ended my association with PHP and Zephir. I prototype in Python, dabble in Lisp, and occasionally work with C.</p>
-            <h3 class="font-medium text-3xl font-sans text-black/90">Areas of Focus</h3>
-            <p class="font-sans text-2xl text-black/70">My primary focus is on programming language development, creating language parsers, working with static and semantic analysis, and conducting research in compiler development — advanced analysis and optimization for high-performance computing. For many years, I have been dedicated to creating and enhancing tools that make life easier for developers, enabling them to use their time more efficiently.</p>
-         </div>
-        </div>
-        <hr>
-        <div class="flex gap-16 ml-10 mt-12 py-8">
-            <h2 class="text-black/90 font-bold font-playfair  text-4xl -tracking-2">Personal Interests</h2>
-            <div class="flex  gap-12 w-1/2">  
-            <p class="font-sans text-2xl text-black/70">In my free time (which is not often), I enjoy watching movies, reading, hiking, and cycling.</p>
-            </div>
-        </div>
-        <div class="bg-black/5  mt-12 py-8">
-          <div class="flex gap-10 justify-center py-14">
-            <h2 class="text-black/90 font-bold font-playfair  text-4xl -tracking-2">Conact</h2>
-            <div class="flex  flex-col  gap-5">
-                <div>
-                    <p class="text-black/70 font-sans text-2xl">The best way to reach me is via:</p>
-                <span class="text-primary font-sans text-2xl">contact@serghei.pl</span>
+                <nav class="hidden lg:flex items-stretch gap-8 text-black ">
+                    <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                        href="#">Home</a>
+                    <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                        href="#">Archive</a>
+                    <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                        href="#">Log</a>
+                    <a class="text-xl text-black py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-100"
+                        href="#">About</a>
+                    <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                        href="#">RSS</a>
+
+                </nav>
+                <div class="flex items-center gap-3">
+                    <button class='text-black/50 p-2 rounded '>
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="size-5 text-black/60">
+                            <path transform="matrix(1 0 0 1 1.6665 1.6667)"
+                                d="M7.08333 13.4167Q8.37233 13.4167 9.54831 12.9193Q10.6847 12.4386 11.5617 11.5617Q12.4386 10.6847 12.9193 9.54831Q13.4167 8.37233 13.4167 7.08333Q13.4167 5.79433 12.9193 4.61835Q12.4386 3.48193 11.5617 2.605Q10.6847 1.72807 9.54831 1.2474Q8.37234 0.75 7.08333 0.75Q5.79433 0.75 4.61835 1.2474Q3.48192 1.72807 2.605 2.605Q1.72807 3.48192 1.2474 4.61835Q0.75 5.79433 0.75 7.08333Q0.75 8.37234 1.2474 9.54831Q1.72807 10.6847 2.605 11.5617Q3.48192 12.4386 4.61835 12.9193Q5.79433 13.4167 7.08333 13.4167ZM7.08333 14.9167Q5.49015 14.9167 4.03402 14.3008Q2.62814 13.7061 1.54434 12.6223Q0.460534 11.5385 -0.134107 10.1326Q-0.75 8.67652 -0.75 7.08333Q-0.75 5.49015 -0.134107 4.03402Q0.460534 2.62814 1.54434 1.54434Q2.62814 0.460534 4.03402 -0.134107Q5.49015 -0.75 7.08333 -0.75Q8.67651 -0.75 10.1326 -0.134107Q11.5385 0.460535 12.6223 1.54434Q13.7061 2.62814 14.3008 4.03402Q14.9167 5.49015 14.9167 7.08333Q14.9167 8.67651 14.3008 10.1326Q13.7061 11.5385 12.6223 12.6223Q11.5385 13.7061 10.1326 14.3008Q8.67651 14.9167 7.08333 14.9167Z"
+                                fill-rule="nonzero" />
+                            <path transform="matrix(1 0 0 1 6.39307 5)"
+                                d="M3.36235 0.952699Q3.82581 1.14872 4.18371 1.50662C4.4766 1.79951 4.95148 1.79951 5.24437 1.50662C5.53726 1.21373 5.53726 0.738852 5.24437 0.445961Q4.67959 -0.118821 3.94666 -0.428814Q3.18727 -0.75 2.357 -0.75Q1.52676 -0.75 0.767371 -0.428812Q0.0344494 -0.118818 -0.53033 0.445961C-0.823221 0.738852 -0.823221 1.21373 -0.53033 1.50662C-0.23744 1.79951 0.237439 1.79951 0.53033 1.50662Q0.88823 1.14872 1.35169 0.952698Q1.83093 0.75 2.357 0.75Q2.8831 0.75 3.36235 0.952699Z"
+                                fill-rule="evenodd" />
+                            <path transform="matrix(1 0 0 1 13.8423 13.8423)"
+                                d="M-0.53033 0.53033C-0.823221 0.237439 -0.823221 -0.237439 -0.53033 -0.53033C-0.237439 -0.823221 0.237439 -0.823221 0.53033 -0.53033L4.06587 3.00521C4.35876 3.2981 4.35876 3.77298 4.06587 4.06587C3.77298 4.35876 3.2981 4.35876 3.00521 4.06587L-0.53033 0.53033Z"
+                                fill-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <a href="#"
+                        class="border border-black/40 leading-none sm:leading-none rounded-md sm:text-lg sm:px-4 p-2 hidden sm:inline-flex font-medium text-black/60 hover:bg-primary hover:border-primary hover:text-white ease-in-out duration-200">Serghei.pl
+                    </a>
                 </div>
-                <div>
-                    <p class="text-black/70 font-sans text-2xl">My public GPG key:</p>
-                    <span class="text-primary font-sans text-2xl">1E0B 5331 219B EA88.</span>
+
+                <div class="fixed flex flex-col inset-0 z-50 ease-in-out duration-300 -translate-x-full mobile-menu">
+                    <div class='bg-black/60 fixed inset-0 menu-overloy'></div>
+                    <div class='max-w-full w-72 bg-white flex-1 relative mr-auto flex flex-col max-h-screen pt-14'>
+                        <button class='absolute top-3 right-3 text-black/50 p-2 rounded menu-close'>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24"
+                                height="24" stroke-width="2">
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+
+                        </button>
+                        <div class="flex justify-center flex-1 overflow-auto max-h-screen">
+                            <nav class="flex flex-col flex-1 divide-y divide-black/10 px-5 ">
+                                <a href="#"
+                                    class="py-3 text-xl text-primary hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Home</a>
+                                <a href="#"
+                                    class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Archive</a>
+                                <a href="#"
+                                    class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Log</a>
+                                <a href="#"
+                                    class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">About</a>
+                                <a href="#"
+                                    class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">RSS</a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
+
+            </header>
+            <main class="flex-1">
+                <div class="max-w-screen-xl px-5 mx-auto">
+                    <section
+                        class="flex flex-col sm:flex-row items-center justify-center gap-5 lg:gap-10 xl:gap-16 py-10 lg:py-16 xl:py-20">
+                        <div
+                            class="w-full sm:max-w-xs lg:max-w-sm md:ml-0 mx-auto flex justify-center items-center overflow-hidden rounded-xl">
+                            <img class="object-cover aspect-square" src="/app/images/sherghei.png" alt="sherghei">
+                        </div>
+                        <div class="flex flex-col justify-center gap-6 flex-1 ">
+                            <h1 class="text-4xl lg:text-6xl text-left text-black/90 font-bold font-playfair">My
+                                Story and Journey</h1>
+                            <p
+                                class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70 text-left max-w-2xl">
+                                Hi!
+                                I am Serghei Iakovlev, a software engineer
+                                and tech
+                                enthusiast from Wrocław, Poland.</p>
+                            <div class="pt-1 lg:pt-3">
+                                <button
+                                    class="bg-linkedin hover:bg-linkedin/90 rounded-md font-medium gap-2 text-white px-10 py-3 lg:py-4 leading-none lg:leading-none text-xl lg:text-2xl inline-flex border-none outline-none ease-in-out duration-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 shrink-0">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+                                    </svg><span>Linkedin</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="divide-y divide-black/10 pb-10 pt-5 lg:py-16 xl:py-20">
+                        <section
+                            class="gap-5 lg:gap-10 xl:gap-16 flex flex-col md:grid md:grid-cols-12 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
+                            <div class="col-span-5">
+                                <h2
+                                    class="text-3xl lg:text-5xl font-playfair font-bold text-black/90 -tracking-2 text-lef md:text-right">
+                                    My
+                                    Current Work</h2>
+                            </div>
+                            <div class="flex flex-col gap-5 col-span-7">
+                                <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">At
+                                    present, I am employed at airSlate,
+                                    where I
+                                    develop a
+                                    comprehensive online platform for
+                                    automating
+                                    business processes. This platform
+                                    enables
+                                    users to
+                                    create, fill out, and sign documents in
+                                    real
+                                    time. </p>
+                                <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">airSlate
+                                    provides tools for building and
+                                    customizing
+                                    business workflows without writing any
+                                    code,
+                                    allowing for accelerated processes and
+                                    increased
+                                    productivity. </p>
+                                <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">It
+                                    facilitates the automation of various
+                                    business
+                                    operations, such as contract management,
+                                    loan application processing, document
+                                    approvals, and much
+                                    more.</p>
+                            </div>
+                        </section>
+
+                        <section
+                            class="gap-5 lg:gap-10 xl:gap-16 flex flex-col md:grid md:grid-cols-12 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
+                            <div class="col-span-5">
+                                <h2
+                                    class="text-3xl lg:text-5xl font-playfair font-bold text-black/90 -tracking-2 text-lef md:text-right">
+                                    Experience</h2>
+                            </div>
+                            <div class="flex flex-col gap-5 col-span-7">
+                                <h3
+                                    class="text-2xl lg:text-4xl font-bold text-black/90 leading-normal lg:leading-normal">
+                                    With the Phalcon</h3>
+                                <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">At
+                                    In the past, I was the primary maintainer of the Zephir language and was part of the
+                                    Phalcon team. Together, we developed a full-featured PHP framework delivered as a C
+                                    extension. Currently, I have ended my association with PHP and Zephir. I prototype
+                                    in Python, dabble in Lisp, and occasionally work with C.</p>
+                                <h3
+                                    class="text-2xl lg:text-4xl font-bold text-black/90 leading-normal lg:leading-normal pt-3">
+                                    Areas of Focus</h3>
+                                <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">My
+                                    primary focus is on programming language development, creating language parsers,
+                                    working with static and semantic analysis, and conducting research in compiler
+                                    development — advanced analysis and optimization for high-performance computing. For
+                                    many years, I have been dedicated to creating and enhancing tools that make life
+                                    easier for developers, enabling them to use their time more efficiently.</p>
+
+                            </div>
+                        </section>
+
+                        <section
+                            class="gap-5 lg:gap-10 xl:gap-16 flex flex-col md:grid md:grid-cols-12 py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0">
+                            <div class="col-span-5">
+                                <h2
+                                    class="text-3xl lg:text-5xl font-playfair font-bold text-black/90 -tracking-2 text-lef md:text-right">
+                                    Personal Interests</h2>
+                            </div>
+                            <div class="flex flex-col gap-5 col-span-7">
+
+                                <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">In my
+                                    free time (which is not often), I enjoy watching <i>movies, reading, hiking, and
+                                        cycling.</i></p>
+
+
+                            </div>
+                        </section>
+
+                        <section
+                            class="relative py-5 lg:py-10 xl:py-16 first-of-type:pt-0 lg:first-of-type:pt-0 xl:first-of-type:pt-0 bg-black/5 !border-t-0 rounded-xl">
+                            <div class="overflow-hidden inset-0 absolute flex justify-center items-center opacity-10">
+                                <img src="./images/home-hero-bg.png" alt="hero-bg"
+                                    class="h-full min-w-full max-w-none object-cover" />
+                            </div>
+                            <div class="gap-5 lg:gap-10 xl:gap-16 flex flex-col md:grid md:grid-cols-12 relative px-5 ">
+                                <div class="col-span-5">
+                                    <h2
+                                        class="text-3xl lg:text-5xl font-playfair font-bold text-black/90 -tracking-2 text-left md:text-right">
+                                        Conact</h2>
+                                </div>
+                                <div class="flex flex-col gap-5 col-span-7">
+                                    <div class="space-y-2">
+                                        <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">
+                                            he
+                                            best way to reach me is via:</p>
+                                        <div class="text-left">
+                                            <a href="mailto:contact@serghei.pl"
+                                                class="text-primary text-xl lg:text-2xl leading-relaxed lg:leading-none">contact@serghei.pl</a>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-xl lg:text-2xl leading-relaxed lg:leading-relaxed text-black/70">
+                                            My public GPG key:</p>
+                                        <div class="text-left">
+                                            <a href="#"
+                                                class="text-primary text-xl lg:text-2xl leading-relaxed lg:leading-none">1E0B 5331 219B EA88.</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+ 
+                    </div>
+                </div>
+            </main>
+            <footer
+          class="border-t border-black/10 flex flex-col-reverse md:flex-row items-center justify-between py-3 px-5 xl:px-10 gap-3 md:gap-5 h-20">
+          <p class="font-inter text-sm text-black/70">CC BY 4.0 Licensed &copy; <span
+              class="current-year"></span> Serghei Iakovlev</p>
+          <nav class="flex flex-wrap items-stretch gap-4 sm:gap-8 font-inter text-black h-20">
+            <a
+              class="text-sm leading-none hover:text-black/50 text-black/70 ease-in-out duration-200 py-2 inline-flex items-center relative"
+              href="#">Home</a>
+            <a
+              class="text-sm leading-none hover:text-black/50 text-black/70 ease-in-out duration-200 py-2 inline-flex items-center relative"
+              href="#">Archive</a>
+            <a
+              class="text-sm leading-none hover:text-black/50 text-black/70 ease-in-out duration-200 py-2 inline-flex items-center relative"
+              href="#">Log</a>
+            <a
+              class="text-sm leading-none hover:text-black/50 text-black/70 ease-in-out duration-200 py-2 inline-flex items-center relative"
+              href="#">About</a>
+            <a
+              class="text-sm leading-none hover:text-black/50 text-black/70 ease-in-out duration-200 py-2 inline-flex items-center relative"
+              href="#">RSS</a>
+
+          </nav>
+        </footer>
         </div>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

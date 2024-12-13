@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content:['app/*.{html,js}'],
+  content:['app/*.{html,js}','app/*/*.{html,js}',],
   theme: {
     extend: {
       fontFamily: {
@@ -11,7 +11,9 @@ module.exports = {
       },
       colors:{
         primary:'#930000',
+        secondary:'#FFD800',
         linkedin:'#0A66C2',
+        codesnippet:'#202134',
       },
       letterSpacing: {
         '1': '0em',
