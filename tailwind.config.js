@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content:["./app/**/*.{html,js}", "./**/*.{html,js}", ],
+  content:['app/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
@@ -18,6 +18,9 @@ module.exports = {
         '2': '0.025em',
         '3': '0.05em',
         '4': '0.1em',
+      },
+      boxShadow:{
+        1:'0px 0px 55px 0px rgba(0,0,0,0.05)'
       }
     },
   },

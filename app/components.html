@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serghei Component</title>
+    <link href="/node_modules/@fontsource-variable/playfair-display/index.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource-variable/inter/index.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/200.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/300.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/400.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/500.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/600.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/700.css" rel="stylesheet" />
+    <link href="/node_modules/@fontsource/spectral/800.css" rel="stylesheet" />
+  
+    <!-- Main Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto py-10">
         <div class="space-y-10">
             <div class="space-y-5">
                 <h2>Typography</h2>
-                <h1>Heading H1</h1>
-                <h2>Heading H2</h2>
-                <h3>Heading H3</h3>
-                <h4>Heading H3</h4>
-                <h5>Heading H3</h5>
-                <h6>Heading H3</h6>
+                <hr/>
+                <h1 class="text-6xl text-black/90 font-bold font-playfair">Heading H1</h1>
+                <h2 class="text-5xl font-playfair font-bold text-black/90">Heading H2</h2>
+                <h3 class="text-4xl font-bold text-black/90">Heading H3</h3>
+                <h4 class="text-2xl font-bold text-black/90">Heading H4</h4>
+                <h5 class="text-xl font-bold text-black/90">Heading H5</h5>
+                <h6 class="text-lg font-bold text-black/90">Heading H6</h6>
+                <p class="text-2xl font-sans text-black/70">Proin venenatis placerat porttitor. Donec rutrum euismod lobortis. Aliquam ac sem eleifend magna venenatis consectetur sed a nisi. Fusce auctor vehicula sem in facilisis.</p>
+                <p class="text-lg font-sans text-black/50">Tags and other small text</p>
+                <h2>Button</h2>
+                <hr/>
+                <div class="flex flex-col gap-3 w-64">
+                <button
+                class="bg-primary hover:bg-primary/80 px-10 py-4 leading-none inline-flex text-white text-2xl font-medium font-sans rounded-md ease-in-out duration-200">Learn
+          more</button>
+                <button
+          class="border border-black/40 text-center rounded-md text-lg px-4 py-1 justify-center inline-flex font-medium text-black/60 hover:bg-primary hover:border-primary hover:text-white ease-in-out duration-200">Learn
+          more</button>
+
+                <button
+          class="rounded-md text-center text-lg px-4 py-1 justify-center inline-flex font-medium text-white bg-linkedin hover:bg-linkedin/80 ease-in-out duration-200">Learn
+          more</button>
+        </div>
             </div>
         </div>
     </div>
