@@ -1,6 +1,19 @@
 const currentYear = new Date().getFullYear()
 document.querySelector('.current-year').innerHTML = currentYear;
 
+// search box
+const searchBtn = document.querySelector('.search-btn')
+const searchClose = document.querySelector('.search-close')
+const searchBox = document.querySelector('.search-box')
+searchBtn.addEventListener("click", () =>{
+  searchBox.classList.add('hidden')
+  searchBox.classList.remove('hidden')
+})
+searchClose.addEventListener("click", () =>{
+  searchBox.classList.remove('hidden')
+  searchBox.classList.add('hidden')
+})
+
 // Menu
 const menuOpen = document.querySelector('.menu-open');
 const menuClose = document.querySelector('.menu-close');
@@ -42,5 +55,7 @@ menuClose.addEventListener("click", () =>{
       }
   
     });
+
+
   
  

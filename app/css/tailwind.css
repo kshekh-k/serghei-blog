@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ 
+/*  --------  */
+ 
+  
+  .on-hover-scroll::-webkit-scrollbar {
+    @apply h-1 w-1 opacity-0;
+  }
+  
+  .on-hover-scroll:hover::-webkit-scrollbar {
+    @apply opacity-100;
+  }
+  
+ 
+  
+  .on-hover-scroll:hover::-webkit-scrollbar-track {
+    @apply bg-transparent opacity-0
+  }
+  
+  .on-hover-scroll::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-transparent transition-all duration-200 ease-in-out opacity-0;
+  }
+  
+  .on-hover-scroll:hover::-webkit-scrollbar-thumb {
+    @apply bg-black/40 opacity-100;
+  }
+  

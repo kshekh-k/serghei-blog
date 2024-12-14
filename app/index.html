@@ -29,85 +29,99 @@
       <div class="flex flex-col min-h-screen">
         <header class="flex items-stretch justify-between px-5 xl:px-10 h-20 border-b border-black/10">
           <div class="flex items-center justify-between sm:justify-start gap-3 flex-1 sm:flex-none">
-            <button class='text-black/50 p-2 pl-0 rounded lg:hidden menu-open'>
+              <button class='text-black/50 p-2 pl-0 rounded lg:hidden menu-open'>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                    <path d="M4 6l16 0"></path>
-                    <path d="M4 12l16 0"></path>
-                    <path d="M4 18l16 0"></path>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                      <path d="M4 6l16 0"></path>
+                      <path d="M4 12l16 0"></path>
+                      <path d="M4 18l16 0"></path>
+                  </svg>
 
-            </button>
-            <div class="w-48 mx-auto flex justify-start items-center">
-                <a href="#"><img class="w-full object-cover" src="/app/images/logo.png" alt="Serghiei" /></a>
-            </div>
-        </div>
+              </button>
+              <div class="relative flex items-center flex-1">
+                  <a href="#" class="mx-auto flex justify-start items-center gap-3"><img class="w-10 object-cover"
+                          src="/app/images/logo-serghei.png" alt="Serghiei" />
+                      <span class="text-2xl text-black font-bold font-playfair">Serghei'sBlog</span>
+                  </a>
+              </div>
+          </div>
 
           <nav class="hidden lg:flex items-stretch gap-8 text-black ">
-            <a
-              class="text-xl text-black py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-100"
-              href="#">Home</a>
-            <a
-              class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
-              href="#">Archive</a>
-            <a
-              class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
-              href="#">Log</a>
-            <a
-              class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
-              href="#">About</a>
-            <a
-              class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
-              href="#">RSS</a>
+              <a class="text-xl text-black py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-100"
+                  href="/">Home</a>
+              <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                  href="#">Archive</a>
+              <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                  href="#">Log</a>
+              <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                  href="about.html">About</a>
+              <a class="text-xl text-black/50 hover:text-black ease-in-out duration-200 py-2 inline-flex items-center relative after:absolute after:inset-x-0 after:bottom-0 after:h-[2px] after:bg-primary after:opacity-0"
+                  href="#">RSS</a>
 
           </nav>
           <div class="flex items-center gap-3">
-                        <button class='text-black/50 p-2 rounded ' >
-            <svg viewBox="0 0 20 20" fill="currentColor"
-              class="size-5 text-black/60">
-              <path transform="matrix(1 0 0 1 1.6665 1.6667)"
-                d="M7.08333 13.4167Q8.37233 13.4167 9.54831 12.9193Q10.6847 12.4386 11.5617 11.5617Q12.4386 10.6847 12.9193 9.54831Q13.4167 8.37233 13.4167 7.08333Q13.4167 5.79433 12.9193 4.61835Q12.4386 3.48193 11.5617 2.605Q10.6847 1.72807 9.54831 1.2474Q8.37234 0.75 7.08333 0.75Q5.79433 0.75 4.61835 1.2474Q3.48192 1.72807 2.605 2.605Q1.72807 3.48192 1.2474 4.61835Q0.75 5.79433 0.75 7.08333Q0.75 8.37234 1.2474 9.54831Q1.72807 10.6847 2.605 11.5617Q3.48192 12.4386 4.61835 12.9193Q5.79433 13.4167 7.08333 13.4167ZM7.08333 14.9167Q5.49015 14.9167 4.03402 14.3008Q2.62814 13.7061 1.54434 12.6223Q0.460534 11.5385 -0.134107 10.1326Q-0.75 8.67652 -0.75 7.08333Q-0.75 5.49015 -0.134107 4.03402Q0.460534 2.62814 1.54434 1.54434Q2.62814 0.460534 4.03402 -0.134107Q5.49015 -0.75 7.08333 -0.75Q8.67651 -0.75 10.1326 -0.134107Q11.5385 0.460535 12.6223 1.54434Q13.7061 2.62814 14.3008 4.03402Q14.9167 5.49015 14.9167 7.08333Q14.9167 8.67651 14.3008 10.1326Q13.7061 11.5385 12.6223 12.6223Q11.5385 13.7061 10.1326 14.3008Q8.67651 14.9167 7.08333 14.9167Z"
-                fill-rule="nonzero" />
-              <path transform="matrix(1 0 0 1 6.39307 5)"
-                d="M3.36235 0.952699Q3.82581 1.14872 4.18371 1.50662C4.4766 1.79951 4.95148 1.79951 5.24437 1.50662C5.53726 1.21373 5.53726 0.738852 5.24437 0.445961Q4.67959 -0.118821 3.94666 -0.428814Q3.18727 -0.75 2.357 -0.75Q1.52676 -0.75 0.767371 -0.428812Q0.0344494 -0.118818 -0.53033 0.445961C-0.823221 0.738852 -0.823221 1.21373 -0.53033 1.50662C-0.23744 1.79951 0.237439 1.79951 0.53033 1.50662Q0.88823 1.14872 1.35169 0.952698Q1.83093 0.75 2.357 0.75Q2.8831 0.75 3.36235 0.952699Z"
-                fill-rule="evenodd" />
-              <path transform="matrix(1 0 0 1 13.8423 13.8423)"
-                d="M-0.53033 0.53033C-0.823221 0.237439 -0.823221 -0.237439 -0.53033 -0.53033C-0.237439 -0.823221 0.237439 -0.823221 0.53033 -0.53033L4.06587 3.00521C4.35876 3.2981 4.35876 3.77298 4.06587 4.06587C3.77298 4.35876 3.2981 4.35876 3.00521 4.06587L-0.53033 0.53033Z"
-                fill-rule="evenodd" />
-            </svg>
-            </button>
+              <div class="relative">
+                  <button class='text-black/50 p-2 rounded search-btn'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          class="size-5">
+                          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                          <path d="M21 21l-6 -6"></path>
+                      </svg>
+                  </button>
 
-            <a href="#"
-              class="border border-black/40 leading-none sm:leading-none rounded-md sm:text-lg sm:px-4 p-2 hidden sm:inline-flex font-medium text-black/60 hover:bg-primary hover:border-primary hover:text-white ease-in-out duration-200">Serghei.pl
-            </a>
+                  <div class="absolute w-60 bg-white flex gap-1 top-0 right-0 hidden search-box">
+                      <input type="search"
+                          class="flex-1 w-full border border-black/10 outline-none rounded py-1.5 px-3 bg-transparent focus:border-black/50 ease-in-out duration-200"
+                          placeholder="Search" />
+                      <button
+                          class='text-black/50 p-2 rounded hover:text-primary ease-in-out duration-200 search-close '>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-4" fill="none"
+                              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="2">
+                              <path d="M18 6l-12 12"></path>
+                              <path d="M6 6l12 12"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              <a href="https://serghei.pl/" target="_blank"
+                  class="border border-black/40 leading-none sm:leading-none rounded-md sm:text-lg sm:px-4 p-2 hidden sm:inline-flex font-medium text-black/60 hover:bg-primary hover:border-primary hover:text-white ease-in-out duration-200">Serghei.pl
+              </a>
           </div>
 
-<div class="fixed flex flex-col inset-0 z-50 ease-in-out duration-300 -translate-x-full mobile-menu">
-  <div class='bg-black/60 fixed inset-0 menu-overloy'></div>
-  <div class='max-w-full w-72 bg-white flex-1 relative mr-auto flex flex-col max-h-screen pt-14'>
-    <button class='absolute top-3 right-3 text-black/50 p-2 rounded menu-close'>
+          <div class="fixed flex flex-col inset-0 z-50 ease-in-out duration-300 -translate-x-full mobile-menu">
+              <div class='bg-black/60 fixed inset-0 menu-overloy'></div>
+              <div class='max-w-full w-72 bg-white flex-1 relative mr-auto flex flex-col max-h-screen pt-14'>
+                  <button class='absolute top-3 right-3 text-black/50 p-2 rounded menu-close'>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-        <path d="M18 6l-12 12"></path>
-        <path d="M6 6l12 12"></path>
-      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24"
+                          height="24" stroke-width="2">
+                          <path d="M18 6l-12 12"></path>
+                          <path d="M6 6l12 12"></path>
+                      </svg>
 
-    </button>
-    <div class="flex justify-center flex-1 overflow-auto max-h-screen">
-      <nav class="flex flex-col flex-1 divide-y divide-black/10 px-5 ">
-        <a href="#" class="py-3 text-xl text-primary hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Home</a>
-        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Archive</a>
-        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Log</a>
-        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">About</a>
-        <a href="#" class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">RSS</a>
-      </nav>
-    </div>
-  </div>
-</div>
+                  </button>
+                  <div class="flex justify-center flex-1 overflow-auto max-h-screen">
+                      <nav class="flex flex-col flex-1 divide-y divide-black/10 px-5 ">
+                          <a href="/"
+                              class="py-3 text-xl text-primary hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Home</a>
+                          <a href="#"
+                              class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Archive</a>
+                          <a href="#"
+                              class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">Log</a>
+                          <a href="about.html"
+                              class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">About</a>
+                          <a href="#"
+                              class="py-3 text-xl text-black/70 hover:text-black font-medium inline-flex justify-between uppercase ease-in-out duration-200 relative">RSS</a>
+                      </nav>
+                  </div>
+              </div>
+          </div>
 
-
-        </header>
+      </header>
         <main class="flex-1">
           <section class="relative overflow-hidden bg-black/5">
             <div

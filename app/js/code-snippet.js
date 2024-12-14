@@ -1,4 +1,13 @@
  
+    const snippet1 = `
+  <span class="text-green-400 text-left">Unable to find installed server supporting this file.</span>
+  <span class="text-green-400 text-left">The following servers could be installed automatically:</span>
+    `;  
+    const snippet2 = `
+  <span class="text-blue-400 text-left">/usr/bin/npm -g \</span>
+  <span class="text-pink-400 text-left">--prefix ~/.emacs.d/.cache/lsp/npm/pyright \</span>
+  <span class="text-yellow-400 text-left">install pyright</span>
+    `;
     const snippet = `
 <span class="text-green-400"># Python Code Example</span>
 <span class="text-blue-400">def</span> <span class="text-yellow-400">greet</span>(<span class="text-pink-400">name</span>):
@@ -18,7 +27,8 @@
     `;
 
     // Insert the snippet into the page
-    document.getElementById('snippet').querySelector('code').innerHTML = snippet;
+    document.getElementById('snippet1').querySelector('code').innerHTML = snippet1;
+    document.getElementById('snippet2').querySelector('code').innerHTML = snippet2;
  
 
 
